@@ -1,0 +1,591 @@
+/* =====================================================
+   HEADER
+   ===================================================== */
+.header-root {
+    background-color: #3A0B1E;
+    border-bottom: 4px solid #BD9868;
+    height: 85px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    line-height: normal;
+}
+
+@media (max-width: 768px) {
+    .header-root {
+        padding: 0 5px;
+    }
+}
+
+.header-row {
+    width: 100%;
+}
+
+.header-logo-col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-width: 0;
+}
+
+.header-logo-icon {
+    cursor: pointer;
+    width: 165px;
+    height: 60px;
+}
+
+@media (max-width: 768px) {
+    .header-logo-icon {
+        width: 80px;
+        height: 35px;
+    }
+}
+
+.ant-typography.header-title-main {
+    color: #fff;
+    letter-spacing: .5px;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .header-title-main {
+        font-size: 13px;
+    }
+}
+
+.ant-typography.header-title-sub {
+    color: #ffffff;
+    font-size: 12px;
+    opacity: 0.85;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .header-title-sub {
+        font-size: 10px;
+    }
+}
+
+.header-actions-col {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* =====================================================
+   FOOTER 
+   ===================================================== */
+.footer-container {
+    background-color: #3A0B1E;
+    color: #8C8C8C;
+    padding: 0;
+    margin-top: 0;
+}
+
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.footer-main-row {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.footer-logo-info-col {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social-col {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ant-typography.footer-heading {
+    color: gray;
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+}
+
+.footer-social-icon {
+    color: #BD9868;
+}
+
+.footer-social-icon-hover {
+    color: #BD9868;
+}
+
+.footer-social-icon svg,
+.footer-social-icon-hover svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+.footer-copyright-div {
+    text-align: center;
+    border-top: 1px solid rgba(140, 140, 140, 0.3);
+    padding-top: 7px;
+}
+
+.footer-copyright-text {
+    color: #8C8C8C;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.footer-copyright-link {
+    color: #BD9868;
+    font-weight: bold;
+}
+
+.footer-image-center {
+    margin: 0 auto;
+}
+
+.footer-text-left {
+    text-align: left;
+}
+
+.footer-text-center {
+    text-align: center;
+}
+
+/* =====================================================
+   LAYOUT AUTH
+   ===================================================== */
+.layout-auth-root {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background: #f0f2f5;
+}
+
+.layout-auth-main {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+.layout-auth-footer {
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+/* =====================================================
+   LAYOUT BASE
+   ===================================================== */
+.layout-base-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.layout-base-inner {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.layout-base-main {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* =====================================================
+   MENU SIDEBAR
+   ===================================================== */
+.menu-layout {
+    background-color: #fff;
+}
+
+.menu-sider {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.menu-sider-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-sider-scroll {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.menu-sider-overflow {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-logo-container {
+    text-align: center;
+}
+
+.sidebar-logout-section {
+    margin-top: auto;
+    align-items: center;
+    align-self: center;
+}
+
+.sidebar-logout-item {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* =====================================================
+   COMMON / REUSABLE
+   ===================================================== */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* =====================================================
+   HEADER TITLE
+   ===================================================== */
+.header-title-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #4A001F;
+}
+
+.header-title-bar--mb {
+    margin-bottom: 2rem;
+}
+
+.header-title-text {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    color: #4A001F;
+}
+
+.header-title-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.header-title-search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+/* =====================================================
+   BUTTON
+   ===================================================== */
+.btn-component-container {
+    display: flex;
+}
+
+.btn-component-wrapper {
+    min-width: 150px;
+    max-width: 250px;
+    width: 100%;
+}
+
+/* =====================================================
+   EMPTY CONTENT
+   ===================================================== */
+.empty-content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+/* =====================================================
+   SEARCH BAR
+   ===================================================== */
+.search-bar-input {
+    width: 280px;
+}
+
+/* =====================================================
+   TABLE WITH PAGINATION
+   ===================================================== */
+.table-pagination {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+/* =====================================================
+   CAROUSEL
+   ===================================================== */
+.carousel-prev-arrow {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.carousel-next-arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.carousel-arrow-icon {
+    font-size: 20px;
+    color: #333;
+}
+
+.logo-background {
+    height: 40vh;
+    min-height: 400px;
+    max-height: 500px;
+
+    background-image: url("../images/Ventanilla Michoacan.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: contain;
+}
+
+/* =====================================================
+   VENTANILLA TEMPLATE VIEW
+   ===================================================== */
+.layout-base-container {
+    height: 100dvh;
+    background: #f4f4f4;
+}
+
+.layout-base-inner {
+    min-height: 0;
+    background: #f4f4f4;
+}
+
+.layout-base-main {
+    flex: 1;
+    min-width: 0;
+    padding: 20px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+.layout-base-card.ant-card {
+    width: 100%;
+    min-height: 608px;
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.layout-base-card--inicio > .ant-card-body {
+    min-height: 606px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-logo-hover {
+    transition: transform 0.25s ease;
+}
+
+.inicio-logo-hover:hover {
+    transform: scale(1.05) rotate(1deg) !important;
+}
+
+.menu-layout.ant-layout {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    min-height: 0;
+    background: #f4f4f4;
+}
+
+.menu-sider.ant-layout-sider {
+    background: #ffffff;
+    border-right: 1px solid #f2f2f2;
+}
+
+.menu-sider .ant-layout-sider-children {
+    height: 100%;
+    min-height: 0;
+}
+
+.menu-sider.ant-layout-sider-has-trigger {
+    padding-bottom: 48px;
+}
+
+.menu-sider .ant-layout-sider-trigger {
+    height: 48px;
+    line-height: 48px;
+    background: #4A001F;
+}
+
+.menu-sider-inner {
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+}
+
+.menu-sider-scroll {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    padding-top: 0;
+    background: #ffffff;
+}
+
+.menu-sider-overflow {
+    min-width: 0;
+    background: #f4f4f4;
+}
+
+.container-menu.ant-menu,
+.menu-logout-wrapper .ant-menu {
+    border-inline-end: 0;
+    font-family: "Gibson-Regular", sans-serif;
+}
+
+.menu-logout-wrapper {
+    flex: 0 0 auto;
+    margin-top: auto;
+    background: #ffffff;
+}
+
+.container-menu.ant-menu .ant-menu-item,
+.container-menu.ant-menu .ant-menu-submenu-title,
+.menu-logout-wrapper .ant-menu .ant-menu-item {
+    width: calc(100% - 8px);
+    height: 40px;
+    margin: 4px;
+    border-radius: 8px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.container-menu.ant-menu-inline .ant-menu-item,
+.container-menu.ant-menu-inline .ant-menu-submenu-title,
+.menu-logout-wrapper .ant-menu-inline .ant-menu-item {
+    padding-inline: 24px !important;
+}
+
+.container-menu.ant-menu .ant-menu-title-content,
+.menu-logout-wrapper .ant-menu .ant-menu-title-content {
+    margin-inline-start: 10px;
+}
+
+.container-menu.ant-menu .ant-menu-item .ant-menu-item-icon,
+.container-menu.ant-menu .ant-menu-submenu-title .ant-menu-item-icon,
+.menu-logout-wrapper .ant-menu .ant-menu-item .ant-menu-item-icon {
+    min-width: 14px;
+    font-size: 14px;
+}
+
+.container-menu.ant-menu .ant-menu-submenu-arrow {
+    inset-inline-end: 16px;
+    color: #333333;
+}
+
+.container-menu.ant-menu .ant-menu-item-selected {
+    color: #ffffff;
+    background: #4A001F;
+}
+
+.container-menu.ant-menu .ant-menu-item-selected .ant-menu-item-icon {
+    color: #ffffff;
+}
+
+.menu-logout-wrapper .ant-menu {
+    padding-bottom: 2px;
+}
+
+.menu-logout-wrapper .ant-menu .ant-menu-item {
+    margin-bottom: 0;
+}
+
+.inicio-example-view {
+    width: 100%;
+    min-height: 606px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-example-view .logo-background {
+    width: min(100%, 700px);
+    height: 40vh;
+    min-height: 400px;
+    max-height: 500px;
+    background-image: url("../images/Ventanilla Michoacan.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (max-width: 991px) {
+    .layout-base-main {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .layout-base-card.ant-card,
+    .layout-base-card--inicio > .ant-card-body,
+    .inicio-example-view {
+        min-height: 420px;
+    }
+
+    .inicio-example-view .logo-background {
+        min-height: 280px;
+    }
+}
