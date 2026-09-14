@@ -1,0 +1,11 @@
+{
+  "version": "2.0",
+  "name": "template_project",
+  "permissions": {
+    "subagents": ["codebase_investigator", "generalist"],
+    "tools": ["run_task", "read_file", "replace", "write_file", "grep_search", "glob"]
+  },
+  "memory": {
+    "location": ".antigravity/memory"
+  }
+}

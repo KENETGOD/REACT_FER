@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+    font-family: "Gibson-Bold";
+    src: url("../../assets/fonts/Gibson-Bold.otf");
+}
+
+@font-face {
+    font-family: "Gibson-Light";
+    src: url("../../assets/fonts/Gibson-Light.otf");
+}
+
+@font-face {
+    font-family: "Gibson-Medium";
+    src: url("../../assets/fonts/Gibson-Medium.otf");
+}
+
+@font-face {
+    font-family: "Gibson-Regular", sans-serif;
+    src: url("../../assets/fonts/Gibson-Regular.otf");
+}
+
+@font-face {
+    font-family: "Gibson-SemiBold";
+    src: url("../../assets/fonts/Gibson-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "Gibson-Thin";
+    src: url("../../assets/fonts/Gibson-Thin.otf");
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none; 
+}
+
+:root {
+    --red: #dc3545;
+    --red-bg: #ec45566b;
+    --white: #ffffff;
+    --black: #000000;
+    --blue: #1946bb;
+    --light-blue: #4b73f0;
+    --guinda: #3A0B1E;
+    --gold: #BD9868;
+    --guindaHover: #6B002C;
+    --rosaClaro: #ffe6ec;
+    --rosaAlert: #ffe6ec;
+    --morado: #6a0f49;
+    --orage: #fdde80;
+    --warning: #f9e8c6;
+    --light-orange: #ffaf17;
+    --green: #d4eddb;
+    --green-text: #2a633a;
+    --primary-text: #050505;
+    --secondary-text: #65676b;
+    --input-gray: #f0f2f5;
+    --gray-00: #f5f6f7;
+    --gray-05: #f2f3f5;
+    --gray-10: #ebedf0;
+    --gray-20: #dadde1;
+    --gray-25: #ccd0d5;
+    --gray-30: #bec3c9;
+    --gray-45: #8d949e;
+    --gray-70: #606770;
+    --gray-80: #444950;
+    --gray-90: #303338;
+    --gray-100: #1c1e21;
+    --lightblue-alpha: rgba(75, 115, 240, 0.1);
+    --black-alpha-05: rgba(0, 0, 0, 0.05);
+    --black-alpha-10: rgba(0, 0, 0, 0.1);
+    --black-alpha-15: rgba(0, 0, 0, 0.15);
+    --black-alpha-20: rgba(0, 0, 0, 0.2);
+    --black-alpha-30: rgba(0, 0, 0, 0.3);
+    --black-alpha-40: rgba(0, 0, 0, 0.4);
+    --black-alpha-50: rgba(0, 0, 0, 0.5);
+    --black-alpha-60: rgba(0, 0, 0, 0.6);
+    --black-alpha-80: rgba(0, 0, 0, 0.8);
+    --overlay-alpha-80: rgba(244, 244, 244, 0.8);
+    --shadow-1: rgba(0, 0, 0, 0.1);
+    --shadow-2: rgba(0, 0, 0, 0.2);
+    --shadow-5: rgba(0, 0, 0, 0.5);
+    --shadow-8: rgba(0, 0, 0, 0.8);
+    --animate-duration: 0.7s;
+    --primary: #007bff;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Gibson-Regular", sans-serif;
+    letter-spacing: 1.1px;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:focus-visible {
+    text-decoration: none;
+    color: unset;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+body {
+    font-family: "Gibson-Regular", sans-serif;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+
+.my-menu-text-black .ant-menu-item,
+.my-menu-text-black .ant-menu-submenu-title,
+.my-menu-text-black .ant-menu-item>a {
+    color: black !important;
+}
+
+.my-menu-text-black .ant-menu-item:hover,
+.my-menu-text-black .ant-menu-submenu-title:hover,
+.my-menu-text-black .ant-menu-item>a:hover {
+    color: black !important;
+}
+
+.my-menu-text-black .ant-menu-item-selected,
+.my-menu-text-black .ant-menu-submenu-title-selected,
+.my-menu-text-black .ant-menu-item-selected>a {
+    color: black !important;
+}
+
+.ant-table-thead th.ant-table-column-sort {
+    background: var(--guinda) !important;
+}
+
+.ant-table-thead th.ant-table-column-has-sorters:hover {
+    background: var(--guindaHover) !important;
+}
+
+.ant-table-column-sorter-inner {
+    color: var(--white) !important;
+}
+
+.ant-table-column-sorter-up.active {
+    color: var(--light-blue) !important;
+}
+
+.ant-table-column-sorter-down.active {
+    color: var(--light-blue) !important;
+}
+
+:where(.css-dev-only-do-not-override-1d4w9r2).ant-layout-header {
+    height: 64px;
+    padding: 0 50px;
+    color: rgba(0, 0, 0, 0.88);
+    line-height: 0;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--guindaHover) !important;
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+    background: var(--guindaHover) !important;
+}
+
+.ant-tabs .ant-tabs-tab:hover {
+    color: var(--guindaHover) !important;
+}
+
+.ant-tabs-card .ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: var(--white) !important;
+}
+
+.ant-btn-primary {
+    background-color: var(--guindaHover) !important;
+    border-color: var(--guindaHover) !important;
+    color: var(--white) !important;
+}
+
+.ant-btn-primary:hover {
+    background-color: var(--guinda) !important;
+    border-color: var(--guinda) !important;
+    color: var(--gray-20) !important;
+}
+
+.ant-btn-default {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-10) !important;
+}
+
+.ant-btn-default:hover {
+    background-color: var(--gray-25) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-25) !important;
+}
+
+.ant-avatar {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-10) !important;
+    cursor: pointer;
+}
+
+.ant-avatar:hover {
+    background-color: var(--gray-25) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-25) !important;
+}
+
+.white-placeholder .ant-input::placeholder {
+    color: var(--gray-10) !important;
+}
+
+.gray-placeholder .ant-input::placeholder {
+    color: var(--gray-30) !important;
+}
+
+.ant-radio-button-wrapper {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-10) !important;
+}
+
+.ant-radio-button-wrapper:hover {
+    background-color: var(--gray-25) !important;
+    color: var(--black) !important;
+    border-color: var(--gray-25) !important;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    border-color: var(--guindaHover) !important;
+}
+
+.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    border-color: var(--guinda) !important;
+}
